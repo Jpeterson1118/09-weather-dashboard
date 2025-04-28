@@ -93,7 +93,7 @@ class WeatherService {
     const date = new Date(response.list[0].dt * 1000).toLocaleDateString()
     const icon = response.list[0].weather[0].icon
     const iconAlt = response.list[0].weather[0].description
-    const tempF = ((response.list[0].main.temp - 273.15) * 9) / 5 + 32
+    const tempF = parseFloat((((response.list[0].main.temp - 273.15) * 9) / 5 + 32).toFixed(2))
     const humidity = response.list[0].main.humidity
     const windSpeed = response.list[0].wind.speed
 
@@ -109,7 +109,7 @@ class WeatherService {
       const date = new Date(weatherData[i].dt * 1000).toLocaleDateString()
       const icon = weatherData[i].weather[0].icon
       const iconAlt = weatherData[i].weather[0].description
-      const tempF = ((weatherData[i].main.temp - 273.15) * 9) / 5 + 32
+      const tempF = parseFloat((((weatherData[i].main.temp - 273.15) * 9) / 5 + 32).toFixed(2))
       const humidity = weatherData[i].main.humidity
       const windSpeed = weatherData[i].wind.speed
 
