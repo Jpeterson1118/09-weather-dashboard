@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "name": "Kansas City",
+    "id": "b616f620-29dd-4857-a795-a0beefda4a63"
+  },
+  {
+    "name": "Los Angeles",
+    "id": "2c5a7b39-45e2-4acf-a612-364546d0ec04"
+  },
+  {
+    "name": "Miami",
+    "id": "3c95aca4-f7dd-44ab-b826-057eb0e20095"
+  }
+]
