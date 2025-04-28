@@ -12,8 +12,6 @@ router.post('/', async (req: Request, res: Response) => {
     if (cityName) {
       const weatherData = await weatherService.getWeatherForCity(cityName)
 
-      console.log(weatherData)
-
       await historyService.addCity(cityName)
       return res.json(weatherData)
     } else {

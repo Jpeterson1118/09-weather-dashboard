@@ -70,7 +70,6 @@ class WeatherService {
   // TODO: Create fetchAndDestructureLocationData method
   private async fetchAndDestructureLocationData() {
     const locationData = await this.fetchLocationData(this.buildGeocodeQuery())
-    console.log(locationData)
 
     if (Array.isArray(locationData) && locationData.length > 0) {
       return this.destructureLocationData(locationData)
@@ -125,8 +124,6 @@ class WeatherService {
 
     const coordinates = await this.fetchAndDestructureLocationData()
 
-    console.log(coordinates)
-
     if (!coordinates) {
       throw new Error('No coordinate data')
     }
@@ -134,8 +131,6 @@ class WeatherService {
     const weatherData = await this.fetchWeatherData(coordinates)
     const currentWeather = await this.parseCurrentWeather(weatherData)
     const forcast = await this.buildForecastArray(weatherData.list)
-
-    console.log(currentWeather, forcast)
 
     return { currentWeather, forcast }
   }
