@@ -20,15 +20,15 @@
 
   ## Usage
   Navigate to the application at [Weather Dashboard](https://zero9-weather-dashboard-m2ib.onrender.com/).
-  [![Site]](./assets/Weather_Dashboard_Empty.png)
+  ![Site](./assets/Weather_Dashboard_Empty.png)
   
   To search enter a city into the search bar and either click submit or press enter.
-  [![Search]](./assets/Weather_Dashboard_Search.png)
+  ![Search](./assets/Weather_Dashboard_Search.png)
 
-  [![Populated]](./assets/Weather_Dashboard_Search_Result.png)
+  ![Populated](./assets/Weather_Dashboard_Search_Result.png)
   
   To use a previously viewed city you may press the automatically generated button in the listand to delete a saved city use the trash icon.
-  [![History]](./assets/Weather_Dashboard_History.png)
+  ![History](./assets/Weather_Dashboard_History.png)
 
   ## Apache 2.0 License
 
